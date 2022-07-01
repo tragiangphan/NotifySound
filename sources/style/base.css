@@ -8,6 +8,7 @@ html {
     font-family: 'Kantumruy Pro', sans-serif;
 }
 
+/* ===== Reset CSS ===== */
 ul {
     padding-left: 0;
 }
@@ -30,3 +31,12 @@ input, button {
     border: none;
 }
 
+/* ===== Color palette ===== */
+:root {
+    --dark: #14121E;
+    --teal: #3CA6B9;
+    --golden: #FFAB48;
+    --light-bg-1: #F1F3F4;
+    --light-component: #FFFFFF;
+    --gradient-bg: linear-gradient(#FEECDE, #E9D7FF);
+}
