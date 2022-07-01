@@ -4,10 +4,10 @@
 </div>
 <div id="badges" align="center">
   <a href="#">
-    <img src="https://img.shields.io/badge/%F0%9F%8E%B7%20Music-A267AC?logo=learning&logoColor=white&style=for-the-badge" alt="Music Badge"/>
+    <img src="https://img.shields.io/badge/%F0%9F%8E%B7%20Music-66669c?logo=learning&logoColor=white&style=for-the-badge" alt="Music Badge"/>
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/%E2%9A%A1%20For%20Study-D7E9F7?logo=learning&logoColor=white&style=for-the-badge" alt="Study Badge"/>
+    <img src="https://img.shields.io/badge/%F0%9F%8E%93%20For%20Study-ffff57?logo=learning&logoColor=white&style=for-the-badge" alt="Study Badge"/>
   </a>
 </div>
  
