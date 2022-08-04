@@ -203,8 +203,6 @@ th:nth-child(2), .popular-chart_title {
     margin-right: 10px;
 }
 
-.app-on-task {}
-
 .app-user {
     display: flex;
     align-items: center;
@@ -260,8 +258,6 @@ th:nth-child(2), .popular-chart_title {
     font-size: 1.3rem;
     opacity: .7;
 }
-
-.app-recent-playlist {}
 
 .app-player {
     background-color: #14121ea2;
