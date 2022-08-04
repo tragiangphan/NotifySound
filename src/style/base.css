@@ -24,8 +24,12 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, 
-h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
 }
 
@@ -33,7 +37,8 @@ table {
     border-collapse: collapse;
 }
 
-input, button {
+input,
+button {
     outline: none;
     border: none;
     font-family: 'Kantumruy Pro', sans-serif;

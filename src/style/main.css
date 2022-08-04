@@ -30,7 +30,7 @@
     font-size: 1.6rem;
     padding: 20px 15px;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
+    border-radius: 50px;
 }
 
 .nav-search > img {
@@ -60,7 +60,9 @@
 .nav-list-main_item {
     display: flex;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    /* margin-bottom: 7px; */
+    padding: 10px 20px;
+    border-radius: 50px;
     opacity: .7;
 }
 
@@ -80,6 +82,11 @@
 .nav-list-main_item.active {
     font-weight: 500;
     opacity: 1;
+    background-color: #ffffff27;
+}
+
+.nav-list-main_item:hover {
+    background-color: #ffffff27;
 }
 
 .app-on-use_banner {
