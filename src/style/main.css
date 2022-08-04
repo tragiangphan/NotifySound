@@ -1,0 +1,191 @@
+.wrapper {
+    margin: 25px 25px;
+}
+
+.nav-logo {
+    align-items: center;
+    font-size: 2.5rem;
+    margin-left: 2px;
+    color: var(--light);
+}
+
+.nav-logo > img {
+    height: 45px;
+    width: 45px;
+}
+
+.nav-logo-title {
+    margin-left: 5px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--coral);
+}
+
+.nav-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 10px 2px;
+    font-size: 1.6rem;
+    padding: 20px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.nav-search > img {
+    width: 16px;
+}
+
+.nav-search > input {
+    background-color: transparent;
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: var(--light);
+    width: 100px;
+}
+
+.nav-lists {
+    margin-left: 2px;
+}
+
+.nav-list-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    opacity: .7;
+}
+
+.nav-list-main_item {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    opacity: .7;
+}
+
+.nav-list-main_item > i {
+    margin-right: 10px;
+    flex: 1;
+}
+
+.nav-list-main_item > span {
+    flex: 7;
+}
+
+.nav-list-main_item.active {
+    font-weight: 500;
+    opacity: 1;
+}
+
+.app-main {}
+
+.app-on-use {}
+
+.app-on-use_banner {
+    background: url('../../asset/img/svg/bg-2.svg') top left / cover no-repeat;
+    border-radius: 20px;
+}
+
+.app-on-use_banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-banner-info {
+    padding: 55px 30px 20px;
+}
+
+.app-banner-info > p {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.app-banner-info > h2 {
+    font-size: 4rem;
+}
+
+.app-banner-info > button {
+    margin-top: 50px;
+}
+
+#btnPlay {
+    padding: 5px 12px;
+    border-radius: 60px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-right: 7px;
+}
+
+#btnView {
+    padding: 7.5px 12px;
+    border-radius: 60px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#btnPlay > i {
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.app-banner-img {
+    margin-top: 50px;
+}
+
+.app-onuse_popular {
+    margin: 20px 10px 0;
+}
+
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.popular-title > h4 {
+    font-size: 1.8rem;
+}
+
+.popular-title > p {
+    opacity: .8;
+}
+
+.popular-chart {
+
+}
+
+th, td {
+    padding: 8px;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.popular-chart {
+
+}
+
+.popular-chart_no {}
+
+.popular-chart_title {
+    display: flex;
+    align-items: center;
+}
+
+.popular-chart_title > img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.popular-chart_plays {}
+
+.popular-chart_time {}
+
+.popular-chart_alb {}
+
+.app-on-task {}
+
+.app-user {}
+
+.app-user-img {}

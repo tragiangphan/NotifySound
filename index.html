@@ -5,34 +5,191 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
+    <link rel="shortcut icon" href="./asset/img/icon/nfc-symbol-brands-white.svg" type="image/x-icon">
+    <title>Notify Sound</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a74a08100a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dce5b609d5.js" crossorigin="anonymous"></script>
 
     <!-- Style -->
-    <link rel="stylesheet" href="/sources/style/base.css">
-    <link rel="stylesheet" href="/sources/style/main.css">
+    <link rel="stylesheet" href="./src/style/gridSystem.css">
+    <link rel="stylesheet" href="./src/style/base.css">
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="./src/style/responsive.css">
 
 </head>
 
 <body>
     <div class="wrapper">
-        <nav class="app-header">
+        <div class="grid row">
+            <nav class="col pc-2 app-navigation">
+                <div class="row nav-logo">
+                    <img src="./asset/img/svg/nfc-symbol-brands.svg" alt="">
+                    <span class="nav-logo-title">
+                        Notify
+                    </span>Sound
+                </div>
+                <div class="nav-search">
+                    <img src="./asset/img/svg/search.svg" alt="">
+                    <input type="search" name="" id="" placeholder="Search...">
+                </div>
+                <div class="nav-lists">
+                    <p class="nav-list-title">
+                        MENU
+                    </p>
+                    <ul class="nav-list-main">
+                        <li class="nav-list-main_item active">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </li>
+                        <li class="nav-list-main_item">
+                            <i class="fa-solid fa-compass"></i>
+                            <span>Discover</span>
+                        </li>
+                        <li class="nav-list-main_item">
+                            <i class="fa-solid fa-ranking-star"></i>
+                            <span>Ranking</span>
+                        </li>
+                    </ul>
+                    <p class="nav-list-title">
+                        LIBRARY
+                    </p>
+                    <ul class="nav-list-main">
+                        <li class="nav-list-main_item">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>Albums</span>
+                        </li>
+                        <li class="nav-list-main_item">
+                            <i class="fa-solid fa-compact-disc"></i>
+                            <span>Songs</span>
+                        </li>
+                        <li class="nav-list-main_item">
+                            <i class="fa-solid fa-podcast"></i>
+                            <span>Podcasts</span>
+                        </li>
+                    </ul>
+                    <p class="nav-list-title">
+                        PLAYLIST
+                    </p>
+                    <ul class="nav-list-main">
+                        <li class="nav-list-main_item">
+                            <i class="fa-solid fa-mosque"></i>
+                            <span>Playlist 1</span>
+                        </li>
+                        <li class="nav-list-main_item">
+                            <i class="fa-solid fa-mosque"></i>
+                            <span>Playlist 2</span>
 
-        </nav>
-        <div class="app-main">
+                        </li>
+                        <li class="nav-list-main_item">
+                            <i class="fa-solid fa-mosque"></i>
+                            <span>Playlist 3</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col pc-10 row app-main">
+                <div class="col pc-9 app-on-use">
+                    <div class="app-on-use_banner">
+                        <div class="app-banner-info">
+                            <p>Playlist</p>
+                            <h2>Top Song <br> Of The Week</h2>
+                            <button id="btnPlay" type="submit">
+                                <i class="fa-solid fa-play"></i>Play
+                            </button>
+                            <button id="btnView" type="submit">
+                                View Playlist
+                            </button>
+                        </div>
 
+                        <img class="app-banner-img" src="./asset/img/Content/TaylorSwift.png" alt="" width="45%">
+                    </div>
+                    <div class="app-onuse_popular">
+                        <div class="popular-title">
+                            <h4>Popular</h4>
+                            <p>See All</p>
+                        </div>
+                        <table class="popular-chart">
+                            <tr>
+                                <th>#</th>
+                                <th>TITLE</th>
+                                <th>PLAYING</th>
+                                <th>TIME</th>
+                                <th>ALBUM</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td class="popular-chart_no active">
+                                    <img src="./asset/img/svg/play-solid.svg" alt="">
+                                </td>
+                                <td class="popular-chart_title">
+                                    <img src="./asset/img/svg/battle-net-brands.svg" alt="" width="50px">
+                                    Wildest Dreams
+                                </td>
+                                <td class="popular-chart_plays">63,637,378</td>
+                                <td class="popular-chart_time">3:40</td>
+                                <td class="popular-chart_alb">1989</td>
+                                <td>
+                                    <img src="./asset/img/svg/ellipsis-vertical-solid.svg" alt="" width="4px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="popular-chart_no">2</td>
+                                <td class="popular-chart_title">
+                                    <img src="./asset/img/svg/battle-net-brands.svg" alt="" width="50px">
+                                    Wildest Dreams
+                                </td>
+                                <td class="popular-chart_plays">63,637,378</td>
+                                <td class="popular-chart_time">3:40</td>
+                                <td class="popular-chart_alb">1989</td>
+                                <td>
+                                    <img src="./asset/img/svg/ellipsis-vertical-solid.svg" alt="" width="4px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="popular-chart_no">3</td>
+                                <td class="popular-chart_title">
+                                    <img src="./asset/img/svg/battle-net-brands.svg" alt="" width="50px">
+                                    Wildest Dreams
+                                </td>
+                                <td class="popular-chart_plays">63,637,378</td>
+                                <td class="popular-chart_time">3:40</td>
+                                <td class="popular-chart_alb">1989</td>
+                                <td>
+                                    <img src="./asset/img/svg/ellipsis-vertical-solid.svg" alt="" width="4px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="popular-chart_no">4</td>
+                                <td class="popular-chart_title">
+                                    <img src="./asset/img/svg/battle-net-brands.svg" alt="" width="50px">
+                                    Wildest Dreams
+                                </td>
+                                <td class="popular-chart_plays">63,637,378</td>
+                                <td class="popular-chart_time">3:40</td>
+                                <td class="popular-chart_alb">1989</td>
+                                <td>
+                                    <img src="./asset/img/svg/ellipsis-vertical-solid.svg" alt="" width="4px">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col pc-2 app-on-task">
+                    <div class="app-user">
+                        <div class="app-user-img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer class="app-footer">
-
-        </footer>
     </div>
-
 </body>
+<script src="./src/script/main.js"></script>
 
 </html>
