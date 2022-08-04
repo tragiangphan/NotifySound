@@ -11,10 +11,6 @@ html {
     background: url('../../asset/img/Content/bg-app.jpg') top left / cover no-repeat;
 }
 
-body {
-    overflow: hidden;
-}
-
 /* ===== Reset CSS ===== */
 ul {
     padding-left: 0;
