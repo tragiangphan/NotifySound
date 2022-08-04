@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 25px 25px;
+    margin: 30px 25px;
 }
 
 .nav-logo {
@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     height: 20px;
-    margin: 10px 2px;
+    margin: 30px 2px;
     font-size: 1.6rem;
     padding: 20px 15px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -110,18 +110,22 @@
 }
 
 #btnPlay {
-    padding: 5px 12px;
+    padding: 5.5px 12px;
     border-radius: 60px;
     font-size: 1.6rem;
     font-weight: 500;
     margin-right: 7px;
+    cursor: pointer;
 }
 
 #btnView {
-    padding: 7.5px 12px;
+    padding: 9.5px 12px;
     border-radius: 60px;
     font-size: 1.6rem;
     font-weight: 500;
+    background-color: var(--dark);
+    color: var(--light);
+    cursor: pointer;
 }
 
 #btnPlay > i {
@@ -134,21 +138,22 @@
 }
 
 .app-onuse_popular {
-    margin: 20px 10px 0;
+    margin: 25px 10px;
 }
 
 .popular-title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
     align-items: baseline;
+    margin-bottom: 12px;
 }
 
 .popular-title > h4 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 
 .popular-title > p {
+    font-size: 1.4rem;
     opacity: .8;
 }
 
@@ -162,15 +167,22 @@ th, td {
     text-align: left;
 }
 
-.popular-chart {
-
+tr {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
 }
 
-.popular-chart_no {}
+td {
+    height: 65px;
+}
+
+th:nth-child(2), .popular-chart_title {
+    width: 100%;
+}
 
 .popular-chart_title {
     display: flex;
     align-items: center;
+    margin-right: 65px;
 }
 
 .popular-chart_title > img {
@@ -178,14 +190,69 @@ th, td {
     margin-right: 10px;
 }
 
-.popular-chart_plays {}
+.app-on-task {}
+
+.app-user {
+    display: flex;
+    align-items: center;
+}
+
+.app-user-img {
+    margin-right: 15px;
+}
+
+.app-user-info {
+    margin-right: 57px;
+    cursor: pointer;
+}
+
+.app-user_name {
+    font-size: 1.5rem;
+}
+
+.app-user_name > i {
+    margin-left: 10px;
+    padding: 5px 7px;
+    border-radius: 50%;
+}
+
+.app-user_name > i:hover {
+    background-color: var(--light-bg);
+}
+
+.app-user_desc {
+    font-size: 1.3rem;
+}
+
+.app-user-noti {
+    padding: 10px 12px;
+    border-radius: 50%;
+    opacity: .7;
+}
+
+.app-user-noti:hover {
+    background-color: var(--light-bg);
+}
+
+.app-recent {
+    margin-top: 30px;
+}
+
+.app-recent-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.app-recent-title > p {
+    font-size: 1.3rem;
+    opacity: .7;
+}
+
+.app-recent-playlist {}
+
+.popular-chart_title {}
 
 .popular-chart_time {}
 
-.popular-chart_alb {}
-
-.app-on-task {}
-
-.app-user {}
-
-.app-user-img {}
+.app-player {}
