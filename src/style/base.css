@@ -11,6 +11,10 @@ html {
     background: url('../../asset/img/Content/bg-app.jpg') top left / cover no-repeat;
 }
 
+body {
+    overflow: hidden;
+}
+
 /* ===== Reset CSS ===== */
 ul {
     padding-left: 0;
@@ -43,8 +47,22 @@ input, button {
 :root {
     --dark: #14121E;
     --light: #FFFFFF;
-    --coral: #F75150;
-    --golden: #FFAB48;
+    --coral: #FF7070;
+    --golden: #00ff99;
     --light-bg: #ffffff36;
     --gradient-bg: linear-gradient(#FEECDE, #dbc1fa);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--coral);
+    border-radius: 20px;
 }
