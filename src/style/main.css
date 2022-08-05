@@ -53,14 +53,14 @@
     color: var(--coral);
     font-size: 1.8rem;
     font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 10px;
 }
 
 .nav-list-main_item {
     display: flex;
     font-size: 1.5rem;
-    /* margin-bottom: 7px; */
+    margin-bottom: 5px;
     padding: 10px 20px;
     border-radius: 50px;
     opacity: .7;
@@ -90,13 +90,12 @@
 }
 
 .app-on-use_banner {
-    background: url('../../asset/img/svg/bg-2.svg') top left / cover no-repeat;
-    border-radius: 20px;
-}
-
-.app-on-use_banner {
     display: flex;
     justify-content: space-between;
+    background: url('../../asset/img/svg/bg-2.svg') top left / cover no-repeat;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .app-banner-info {
@@ -113,7 +112,7 @@
 }
 
 .app-banner-info > button {
-    margin-top: 50px;
+    margin-top: 25%;
 }
 
 #btnPlay {
@@ -141,7 +140,12 @@
 }
 
 .app-banner-img {
-    margin-top: 50px;
+    position: absolute;
+    background: url('../../asset/img/Content/TaylorSwift.png') bottom right / cover no-repeat;
+    min-width: 50%;
+    min-height: 100%;
+    bottom: 0;
+    right: -40px;
 }
 
 .app-onuse_popular {
@@ -166,8 +170,13 @@
 
 .popular-content {
     width: 100%;
-    height: 330px;
+    height: 310px;
     overflow-y: scroll;
+}
+
+th {
+    position: sticky;
+    left: 0;
 }
 
 th, td {
@@ -203,17 +212,33 @@ th:nth-child(2), .popular-chart_title {
     margin-right: 10px;
 }
 
+.app-main-subcontent {
+    padding-right: 0;
+    margin-right: -32px;
+}
+
+.app-on-task {
+    display: flex;
+    flex-direction: column;
+}
+
 .app-user {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.app-user-info-all {
+    display: flex;
+    justify-content: space-around;
 }
 
 .app-user-img {
-    margin-right: 15px;
+    width: 45px;
+    margin-right: 10px;
 }
 
 .app-user-info {
-    margin-right: 55px;
     cursor: pointer;
 }
 
@@ -236,8 +261,9 @@ th:nth-child(2), .popular-chart_title {
 }
 
 .app-user-noti {
-    padding: 10px 12px;
+    padding: 7px 10px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .app-user-noti:hover {
@@ -245,6 +271,8 @@ th:nth-child(2), .popular-chart_title {
 }
 
 .app-recent {
+    width: 100%;
+    margin-right: 20px;
     margin-top: 30px;
 }
 
@@ -262,35 +290,34 @@ th:nth-child(2), .popular-chart_title {
 .app-player {
     background-color: #14121ea2;
     margin-top: 30px;
-    padding: 20px;
+    margin-left: 10px;
+    padding: 15px;
+    width: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.app-player > img {
-    border-radius: 20px;
-}
-
-.app-player > a {
+.app-player-song-tasks > a {
     color: var(--light);
     font-weight: 500;
-    margin-top: 10px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
-.app-player > p {
+.app-player-song-tasks > span {
     margin-top: 4px;
-    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
     color: var(--light);
     opacity: .7;
 }
 
 .app-player-song-img {
-    width: 230px;
+    width: 200px;
     height: 150px;
     margin-top: 5px;
+    margin-bottom: 30px;
     background: url("../../asset/img/Content/1591.jpg") center / cover no-repeat;
     border-radius: 15px;
 }
@@ -302,8 +329,8 @@ th:nth-child(2), .popular-chart_title {
 .amplitude-song-slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 220px;
-    height: 4px;
+    width: 100%;
+    height: 3px;
     background: #fff;
     /* opacity: .7; */
     outline: none;
@@ -324,24 +351,29 @@ th:nth-child(2), .popular-chart_title {
 .app-player-timeline {
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
 .app-player-timeline > i:nth-child(odd) {
     padding: 7px 11px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .app-player-timeline > i:nth-child(even) {
     padding: 7px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .app-player-timeline > i:hover {
     background-color: var(--light-bg);
+}
+
+.footer {
+    height: 100%;
+    background-color: var(--coral);
 }

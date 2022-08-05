@@ -1,19 +1,125 @@
 /* ===== Mobile ===== */
 @media only sreen and (max-width: 47.9375em) {
-    
+    .none-mb {
+        display: none;
+    }
 }
 
 /* ===== Tablet ===== */
 @media only screen and (min-width: 48em) and (max-width: 63.9375em) {
-    
+    .none-tb {
+        display: none;
+    }
+
+    .wrapper {
+        margin: 70px 25px;
+    }
+
+    .nav-logo {
+        justify-content: center;
+    }
+
+    .nav-logo>img {
+        margin-bottom: 5px;
+    }
+
+    .nav-logo-title {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .app-banner-info>h2 {
+        font-size: 3rem;
+    }
+
+    .app-banner-info>button {
+        margin-top: 15%;
+    }
+
+    #btnPlay,
+    #btnView {
+        font-size: 1.3rem;
+    }
+
+    .row.app-main-content {
+        display: block;
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+
+    .app-banner-img {
+        max-width: 30%;
+        min-height: 70%;
+        bottom: 4.75px;
+        right: -15px;
+    }
+
+    .app-recent-playlist>table {
+        width: 100%;
+    }
+
+    .popular-content {
+        width: 100%;
+        height: 170px;
+        overflow-y: scroll;
+    }
+
+    .app-recent-playlist {
+        margin-top: 15px;
+        width: 100%;
+        height: 150px;
+        overflow-y: scroll;
+    }
+
+    .app-user-img {
+        width: 35px;
+    }
+
+    .app-user-info-all {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .app-user-info-all .app-user_name {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .app-user-info-all .app-user_desc {
+        font-size: 1.1rem;
+        opacity: .8;
+    }
+
+    .app-player {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .app-player-song-img {
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    .app-player-song-tasks {
+        flex: 1;
+    }
 }
 
 /* ===== Tablet & mobile ===== */
 @media only screen and (max-width: 63.9375em) {
-    
+    .none-mb-tb {
+        display: none;
+    }
+
+
 }
 
 /* ===== PC ===== */
 @media only screen and (min-width: 64em) {
-    
+    .none-pc {
+        display: none;
+    }
 }

@@ -26,18 +26,21 @@
 <body>
     <div class="wrapper">
         <div class="grid row">
-            <nav class="col pc-2 app-navigation">
-                <div class="row nav-logo">
-                    <img src="./asset/img/svg/nfc-symbol-brands.svg" alt="">
-                    <span class="nav-logo-title">
-                        Notify
-                    </span>Sound
+            <nav class="col pc-2 tb-3 app-navigation">
+                <div class="nav-tabs">
+                    <div class="row nav-logo">
+                        <img src="./asset/img/svg/nfc-symbol-brands.svg" alt="">
+                        <span class="none-mb">
+                            <span class="nav-logo-title">
+                                Notify</span>Sound
+                        </span>
+                    </div>
+                    <div class="nav-search">
+                        <img src="./asset/img/svg/search.svg" alt="">
+                        <input type="search" name="" id="" placeholder="Search...">
+                    </div>
                 </div>
-                <div class="nav-search">
-                    <img src="./asset/img/svg/search.svg" alt="">
-                    <input type="search" name="" id="" placeholder="Search...">
-                </div>
-                <div class="nav-lists">
+                <div class="nav-lists none-mb">
                     <p class="nav-list-title">
                         MENU
                     </p>
@@ -108,9 +111,23 @@
                         </li>
                     </ul>
                 </div>
+                <div class="app-user none-pc">
+                    <div class="app-user-info-all">
+                        <img class="app-user-img" src="./asset/img/svg/user-02.svg" alt="">
+                        <div class="app-user-info">
+                            <p class="app-user_name">
+                                Taylor Swift
+                                <i class="fa-solid fa-angle-down"></i>
+                            </p>
+                            <p class="app-user_desc">
+                                Member
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <div class="col pc-10">
-                <div class="row app-main">
+            <div class="col pc-10 tb-9">
+                <div class="grid row app-main-content">
                     <div class="col pc-9 app-on-use">
                         <div class="app-on-use_banner">
                             <div class="app-banner-info">
@@ -123,8 +140,8 @@
                                     View Playlist
                                 </button>
                             </div>
-
-                            <img class="app-banner-img" src="./asset/img/Content/TaylorSwift.png" alt="" width="45%">
+                            <div class="app-banner-img"></div>
+                            <!-- <img class="app-banner-img" src="./asset/img/Content/TaylorSwift.png" alt="" min-width="25"> -->
                         </div>
                         <div class="app-onuse_popular">
                             <div class="popular-title">
@@ -253,27 +270,29 @@
                         </div>
                     </div>
                     <div class="col pc-3 app-on-task">
-                        <div class="app-user">
-                            <img class="app-user-img" src="./asset/img/svg/user-02.svg" alt="" width="50">
-                            <div class="app-user-info">
-                                <p class="app-user_name">
-                                    Taylor Swift
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </p>
-                                <p class="app-user_desc">
-                                    Member
-                                </p>
+                        <div class="app-user none-mb-tb">
+                            <div class="app-user-info-all">
+                                <img class="app-user-img" src="./asset/img/svg/user-02.svg" alt="">
+                                <div class="app-user-info">
+                                    <p class="app-user_name">
+                                        Taylor Swift
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </p>
+                                    <p class="app-user_desc">
+                                        Member
+                                    </p>
+                                </div>
                             </div>
                             <div class="app-user-noti">
                                 <img src="./asset/img/svg/bell-solid.svg" alt="" width="15">
                             </div>
                         </div>
                         <div class="app-recent">
+                            <div class="app-recent-title">
+                                <h3>Recently Played</h3>
+                                <p>See All</p>
+                            </div>
                             <div class="app-recent-playlist">
-                                <div class="app-recent-title">
-                                    <h3>Recently Played</h3>
-                                    <p>See All</p>
-                                </div>
                                 <table>
                                     <tr>
                                         <td class="popular-chart_title">
@@ -329,26 +348,17 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="app-player">
-                                <div class="app-player-song-img"></div>
+                        </div>
+                        <div class="app-player">
+                            <div class="app-player-song-img"></div>
+                            <div class="app-player-song-tasks">
                                 <a href="#">Wildest Dream</a>
-                                <p>Taylor Swift</p>
+                                <span>- Taylor Swift</span>
                                 <div class="time-progress">
                                     <div id="progress-container">
                                         <input type="range" class="amplitude-song-slider" />
-                                        <!-- <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
-                                        <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress> -->
+                                
                                     </div>
-
-                                    <!-- <div class="time-container">
-                                        <span class="current-time">
-                                            <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
-                                        </span>
-                                        <span class="duration">
-                                            <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
-                                        </span>
-                                    </div> -->
-
                                     <div class="app-player-timeline">
                                         <i class="fa-solid fa-backward-step"></i>
                                         <i class="fa-solid fa-circle-play"></i>
@@ -361,6 +371,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="grid row">
+            <div class="footer"></div>
         </div>
     </div>
 </body>
