@@ -26,16 +26,16 @@
 <body>
     <div class="wrapper">
         <div class="grid row">
-            <nav class="col pc-2 tb-3 app-navigation">
+            <nav class="col pc-2 tb-3 mb-12 app-navigation">
                 <div class="nav-tabs">
                     <div class="row nav-logo">
                         <img src="./asset/img/svg/nfc-symbol-brands.svg" alt="">
-                        <span class="none-mb">
+                        <span>
                             <span class="nav-logo-title">
                                 Notify</span>Sound
                         </span>
                     </div>
-                    <div class="nav-search">
+                    <div class="nav-search none-mb">
                         <img src="./asset/img/svg/search.svg" alt="">
                         <input type="search" name="" id="" placeholder="Search...">
                     </div>
@@ -111,7 +111,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="app-user none-pc">
+                <div class="app-user none-pc none-mb">
                     <div class="app-user-info-all">
                         <img class="app-user-img" src="./asset/img/svg/user-02.svg" alt="">
                         <div class="app-user-info">
@@ -126,9 +126,9 @@
                     </div>
                 </div>
             </nav>
-            <div class="col pc-10 tb-9">
+            <div class="col pc-10 tb-9 mb-12 app-main">
                 <div class="grid row app-main-content">
-                    <div class="col pc-9 app-on-use">
+                    <div class="col pc-9 app-on-use none-mb">
                         <div class="app-on-use_banner">
                             <div class="app-banner-info">
                                 <p>Playlist</p>
@@ -270,7 +270,7 @@
                         </div>
                     </div>
                     <div class="col pc-3 app-on-task">
-                        <div class="app-user none-mb-tb">
+                        <div class="app-user none-tb none-mb">
                             <div class="app-user-info-all">
                                 <img class="app-user-img" src="./asset/img/svg/user-02.svg" alt="">
                                 <div class="app-user-info">
@@ -352,12 +352,11 @@
                         <div class="app-player">
                             <div class="app-player-song-img"></div>
                             <div class="app-player-song-tasks">
-                                <a href="#">Wildest Dream</a>
-                                <span>- Taylor Swift</span>
+                                <a href="#">Wildest Dream
+                                <span>- Taylor Swift</span></a>
                                 <div class="time-progress">
                                     <div id="progress-container">
                                         <input type="range" class="amplitude-song-slider" />
-                                
                                     </div>
                                     <div class="app-player-timeline">
                                         <i class="fa-solid fa-backward-step"></i>
@@ -372,10 +371,25 @@
                 </div>
             </div>
         </div>
-        <div class="grid row">
-            <div class="footer"></div>
+        <div class="app-user none-tb none-pc">
+            <div class="app-user-info-all">
+                <img class="app-user-img" src="./asset/img/svg/user-02.svg" alt="">
+                <div class="app-user-info">
+                    <p class="app-user_name">
+                        Taylor Swift
+                        <i class="fa-solid fa-angle-down"></i>
+                    </p>
+                    <p class="app-user_desc">
+                        Member
+                    </p>
+                </div>
+            </div>
+            <div class="app-user-noti none-tb none-pc">
+                <img src="./asset/img/svg/bell-solid.svg" alt="" width="15">
+            </div>
         </div>
     </div>
+    
 </body>
 <script src="./src/script/main.js"></script>
 

@@ -1,31 +1,81 @@
 /* ===== Mobile ===== */
-@media only sreen and (max-width: 47.9375em) {
+@media (max-width: 47.9375em) {
     .none-mb {
-        display: none;
-    }
-}
-
-/* ===== Tablet ===== */
-@media only screen and (min-width: 48em) and (max-width: 63.9375em) {
-    .none-tb {
         display: none;
     }
 
     .wrapper {
-        margin: 70px 25px;
+        position: relative;
+        margin: 30px auto;
+        user-select: none;
+        height: 180vh;
     }
 
-    .nav-logo {
+    .app-on-task {
+        flex-direction: column-reverse;
         justify-content: center;
+        margin: 10px 30px 0;
     }
 
-    .nav-logo>img {
-        margin-bottom: 5px;
+    .app-main-content {
+        display: block;
     }
 
-    .nav-logo-title {
-        margin-left: 0;
-        margin-top: 40px;
+    .app-player-song-img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .app-user {
+        width: 100%;
+        position: fixed;
+        margin-top: 17.75px;
+        bottom: 0;
+        padding: 20px 30px;
+    }
+
+    .app-player {
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+
+    .app-recent {
+        margin-top: 30px;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .app-recent-playlist {
+        height: 200px;
+        overflow-y: scroll;
+    }
+
+    .app-player-song-tasks>a {
+        margin: 30px auto;
+    }
+
+    .time-progress {
+        margin-top: 20px;
+    }
+
+    .app-player-timeline {
+        margin-top: 24px;
+    }
+
+    .app-player-timeline>i:nth-child(odd),
+    .app-player-timeline>i:nth-child(even) {
+        font-size: 2.5rem;
+    }
+
+    .app-recent-title {
+        margin-bottom: 18px;
+    }
+}
+
+/* ===== Tablet ===== */
+@media (min-width: 48em) and (max-width: 64em) {
+    .wrapper {
+        margin: 70px 25px;
     }
 
     .app-banner-info>h2 {
@@ -50,12 +100,8 @@
     .app-banner-img {
         max-width: 30%;
         min-height: 70%;
-        bottom: 4.75px;
+        bottom: 0;
         right: -15px;
-    }
-
-    .app-recent-playlist>table {
-        width: 100%;
     }
 
     .popular-content {
@@ -71,13 +117,24 @@
         overflow-y: scroll;
     }
 
+    .app-user {
+        display: block;
+    }
+
     .app-user-img {
         width: 35px;
+    }
+
+    .app-user-info {
+        flex: 1;
+        padding-left: 5px;
+        padding-right: 10px;
     }
 
     .app-user-info-all {
         display: flex;
         margin-top: 30px;
+        justify-content: left;
     }
 
     .app-user-info-all .app-user_name {
@@ -88,6 +145,12 @@
     .app-user-info-all .app-user_desc {
         font-size: 1.1rem;
         opacity: .8;
+    }
+
+    .app-user_name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .app-player {
@@ -106,19 +169,39 @@
     .app-player-song-tasks {
         flex: 1;
     }
+
+    .none-tb {
+        display: none;
+    }
 }
 
 /* ===== Tablet & mobile ===== */
-@media only screen and (max-width: 63.9375em) {
+@media (max-width: 64em) {
+    .nav-logo {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-logo>img {
+        margin-bottom: 5px;
+    }
+
+    .nav-logo-title {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .app-recent-playlist>table {
+        width: 100%;
+    }
+
     .none-mb-tb {
         display: none;
     }
-
-
 }
 
 /* ===== PC ===== */
-@media only screen and (min-width: 64em) {
+@media (min-width: 64.0625em) {
     .none-pc {
         display: none;
     }

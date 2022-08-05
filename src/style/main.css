@@ -305,7 +305,7 @@ th:nth-child(2), .popular-chart_title {
     font-size: 1.5rem;
 }
 
-.app-player-song-tasks > span {
+.app-player-song-tasks > a > span {
     margin-top: 4px;
     margin-bottom: 10px;
     font-size: 1.3rem;
@@ -371,9 +371,4 @@ th:nth-child(2), .popular-chart_title {
 
 .app-player-timeline > i:hover {
     background-color: var(--light-bg);
-}
-
-.footer {
-    height: 100%;
-    background-color: var(--coral);
 }
