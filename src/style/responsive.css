@@ -1,10 +1,11 @@
 /* ===== Mobile ===== */
-@media (max-width: 47.9375em) {
+@media (max-width: 48em) {
     .none-mb {
         display: none;
     }
 
     .wrapper {
+        display: block !important;
         position: relative;
         margin: 30px auto;
         user-select: none;
@@ -73,7 +74,7 @@
 }
 
 /* ===== Tablet ===== */
-@media (min-width: 48em) and (max-width: 64em) {
+@media (min-width: 48.001em) and (max-width: 64em) {
     .wrapper {
         margin: 70px 25px;
     }
