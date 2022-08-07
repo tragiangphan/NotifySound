@@ -1,5 +1,5 @@
 /* ===== Mobile ===== */
-@media (max-width: 48em) {
+@media (max-width: 47.9375em) {
     .none-mb {
         display: none;
     }
@@ -74,7 +74,7 @@
 }
 
 /* ===== Tablet ===== */
-@media (min-width: 48.001em) and (max-width: 64em) {
+@media (min-width: 48em) and (max-width: 63.9375em) {
     .wrapper {
         margin: 70px 25px;
     }
@@ -177,7 +177,7 @@
 }
 
 /* ===== Tablet & mobile ===== */
-@media (max-width: 64em) {
+@media (max-width: 63.9375em) {
     .nav-logo {
         flex-direction: column;
         justify-content: center;
@@ -202,7 +202,7 @@
 }
 
 /* ===== PC ===== */
-@media (min-width: 64.0625em) {
+@media (min-width: 64em) {
     .none-pc {
         display: none;
     }
